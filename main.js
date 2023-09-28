@@ -1,6 +1,14 @@
-let i = parseInt(prompt("elegi un numero del 1 aL 10"));
+const convertAndReverse = 0;
+const returnReverseValue = number => {
+   const convertAndReverse = number.toString().split("").reverse().join("");
+   return Number(convertAndReverse);
+};
+let number = Number(prompt("elige un numero de tres digitos ordenados de mayor a menor"));
 
-while(i>=0 || i<=10){
-   alert(i++);
-   if(i>=10) break;
+if(number>0){
+   alert("ahora restale el mismo numero pero invertido");
+   alert(`acaso el resultado es ${number - returnReverseValue(number)}?`);
+}
+else{
+   alert("algo hicimos mal")
 };
