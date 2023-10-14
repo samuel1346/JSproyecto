@@ -1,4 +1,4 @@
-alert("El juego se basa en elegir un número del 1 al 10. Si tu número es mayor que el de la computadora, ganas.");
+/*alert("El juego se basa en elegir un número del 1 al 10. Si tu número es mayor que el de la computadora, ganas.");
 
 let wins = 0;
 let losses = 0;
@@ -37,3 +37,65 @@ while (true) {
 }
 
 alert(`Juegos ganados: ${wins} Juegos perdidos: ${losses}`);
+*/
+const historialPacientes = [];
+
+class Paciente {
+  constructor(descriptores) {
+    this.raza = descriptores.raza;
+    this.nombre = descriptores.nombre;
+    this.edad = descriptores.edad;
+    this.color = descriptores.color;
+    this.peso = descriptores.peso;
+    this.sexo = descriptores.sexo;
+  }
+
+  cartillaMedica() {
+    alert(`El paciente atendido hoy es un ${this.raza}
+      se llama ${this.nombre}, 
+      tiene ${this.edad}, 
+      sus colores son ${this.color}, 
+      pesa ${this.peso}, 
+      y su sexo es ${this.sexo}`
+    );
+  }
+}
+
+class Animalitos extends Paciente {
+  constructor(descriptores) {
+    super(descriptores);
+  }
+}
+
+let shouldAddPatient = true;
+
+while (shouldAddPatient) {
+  const listaPacientes = new Animalitos({
+    raza: prompt("raza de tu mascota"),
+    nombre: prompt("nombre de la mascota"),
+    edad: prompt("cuántos años/meses tiene"),
+    color: prompt("de qué color es"),
+    peso: prompt("cuánto pesa"),
+    sexo: prompt("es macho o hembra"),
+  });
+
+  historialPacientes.push(listaPacientes);
+
+  const continueAdding = confirm("Do you want to add another patient?");
+  if (!continueAdding) {
+    shouldAddPatient = false;
+  }
+}
+
+
+const gatos = historialPacientes.filter(paciente => paciente.raza === "gato");
+const perros = historialPacientes.filter(paciente => paciente.raza === "perro");
+
+gatos.sort((a, b) => a.raza.localeCompare(b.raza));
+perros.sort((a, b) => a.raza.localeCompare(b.raza));
+
+const sortedHistorialPacientes = gatos.concat(perros);
+
+console.log(sortedHistorialPacientes);
+
+
