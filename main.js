@@ -81,21 +81,20 @@ while (shouldAddPatient) {
 
   historialPacientes.push(listaPacientes);
 
-  const continueAdding = confirm("Do you want to add another patient?");
+  const continueAdding = confirm("queres añadir un nuevo paciente?");
   if (!continueAdding) {
     shouldAddPatient = false;
   }
 }
 
+const searchPaciente = confirm("queres buscar algun paciente?");
+if (searchPaciente) {
+    nombreDelPaciente = prompt("escriba el nombre del paciente");
+};
+const pacienteEncontrado = historialPacientes.filter(paciente => paciente.nombre === nombreDelPaciente);
+console.log(pacienteEncontrado);
 
-const gatos = historialPacientes.filter(paciente => paciente.raza === "gato");
-const perros = historialPacientes.filter(paciente => paciente.raza === "perro");
-
-gatos.sort((a, b) => a.raza.localeCompare(b.raza));
-perros.sort((a, b) => a.raza.localeCompare(b.raza));
-
-const sortedHistorialPacientes = gatos.concat(perros);
-
-console.log(sortedHistorialPacientes);
+historialPacientes.sort((a, b) => a.raza.localeCompare(b.raza));
+console.log(historialPacientes);
 
 
