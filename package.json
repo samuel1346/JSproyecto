@@ -1,0 +1,24 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "proyecto js de una veterinaria",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch css/main.scss  css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuel1346/preEntregaSilva.git"
+  },
+  "author": "samuel silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuel1346/preEntregaSilva/issues"
+  },
+  "homepage": "https://github.com/samuel1346/preEntregaSilva#readme",
+  "dependencies": {
+    "sass": "^1.69.4"
+  }
+}

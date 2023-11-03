@@ -3,22 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <title>proyecto de javascript</title>
 </head>
 <body>
-    <header>
+    <nav>
         <h1>
-            bienvenido a mi segunda entrega
+            Veterinaria
         </h1>
+        <ul class="ulIndex" id="ulIndex">
+            <li>
+                Inicio
+            </li>
+            <li>
+                pacientes
+            </li>
+            <li>
+                reservas
+            </li>
+        </ul>
+    </nav>
+    <header>
     </header>
-    <body>
-    </body>
-    <aside>
-
+    <main class="mainIndex" id="mainIndex">
+        <h1>ingresar datos de la mascota</h1>
+        <form action="" id="formSaveDataPatient" class="formSaveDataPatient">
+            <label for="nombre">nombre y apellido</label>
+            <input type="text" id="nombre">
+            <label for="edad">cuantos años/meses tiene?</label>
+            <input type="text" id="edad">
+            <label for="sexo">es macho o hembra?</label>
+            <input type="text" id="sexo">
+            <label for="peso">cuantos kilos pesa?</label>
+            <input type="text" id="peso">
+            <label for="raza">que especie es? perro, gato, etc.</label>
+            <input type="text" id="raza">
+            <input type="submit" value="guardar">
+        </form>
+    </main>
+    <aside class="asideIndex" id="asideIndex">
+        <h2>buscar paciente</h2>
+        <form action="" id="searchPaciente">
+            <label for="nombreDeLaBusqueda">nombre y apellido</label>
+            <input type="text" id="nombreDeLaBusqueda">
+            <input type="submit" id="enviar" value="buscar">
     </aside>
     <footer>
 
     </footer>
-<script src="/main.js"></script>
+    <script src="/main.js"></script>
 </body>
 </html>

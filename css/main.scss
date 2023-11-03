@@ -1,0 +1,42 @@
+@import "_vars";
+
+*{
+    font-family: $fontFamilies;
+    color: $fontColor;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    object-fit: cover;
+};
+body{
+    background-color: $backGroundBody;
+};
+form {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    input{
+        width: 50%;
+        height: 10%;
+        margin: 1%;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: $mainColor;
+    border: $backGroundText;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5px;
+        padding-left: 5px;
+        li{
+            margin: 5px;
+        }
+    }
+}

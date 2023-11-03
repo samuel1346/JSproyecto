@@ -1,100 +1,67 @@
-/*alert("El juego se basa en elegir un número del 1 al 10. Si tu número es mayor que el de la computadora, ganas.");
+const pacientes = JSON.parse(localStorage.getItem("pacientes")) || [];
 
-let wins = 0;
-let losses = 0;
-
-const getUserNumber = () => {
-  const userNumber = parseInt(prompt("Elige un número del 1 al 10"));
-  if (userNumber < 1 || userNumber > 10 || isNaN(userNumber)) {
-    alert("Por favor, ingresa un número válido del 1 al 10.");
-    return getUserNumber();
-  }
-  return userNumber;
-};
-
-const playAgain = () => {
-  const response = prompt("¿Quieres jugar de nuevo? (si/no)").toLowerCase();
-  return response === "si";
-};
-
-while (true) {
-  const userNumber = getUserNumber();
-  const playerPc = Math.floor(Math.random() * 10) + 1;
-
-  if (userNumber > playerPc) {
-    alert("¡Ganaste!");
-    wins++;
-  } else if (userNumber < playerPc) {
-    alert("Perdiste.");
-    losses++;
-  } else {
-    alert("Es un empate.");
-  }
-
-  if (!playAgain()) {
-    break;
-  }
-}
-
-alert(`Juegos ganados: ${wins} Juegos perdidos: ${losses}`);
-*/
-const historialPacientes = [];
+const formSaveDataPatient = document.getElementById("formSaveDataPatient");
+formSaveDataPatient.addEventListener("submit", (e) => {
+  e.preventDefault();
+  
+  const inputs = e.target.children;
+  const listaPaciente = new Animalitos({
+    nombre: inputs[1].value,
+    edad: inputs[3].value,
+    sexo: inputs[5].value,
+    peso: inputs[7].value,
+    raza: inputs[9].value,
+    dni:  Math.random() * 10,
+  })
+  pacientes.push(listaPaciente);
+  localStorage.setItem("pacientes", JSON.stringify(pacientes));
+  console.log(pacientes);
+});
 
 class Paciente {
   constructor(descriptores) {
-    this.raza = descriptores.raza;
     this.nombre = descriptores.nombre;
     this.edad = descriptores.edad;
-    this.color = descriptores.color;
-    this.peso = descriptores.peso;
     this.sexo = descriptores.sexo;
+    this.peso = descriptores.peso;
+    this.raza = descriptores.raza;
+    this.dni = descriptores.dni;
   }
-
-  cartillaMedica() {
-    alert(`El paciente atendido hoy es un ${this.raza}
-      se llama ${this.nombre}, 
-      tiene ${this.edad}, 
-      sus colores son ${this.color}, 
-      pesa ${this.peso}, 
-      y su sexo es ${this.sexo}`
-    );
-  }
+  
 }
-
 class Animalitos extends Paciente {
   constructor(descriptores) {
     super(descriptores);
   }
 }
 
-let shouldAddPatient = true;
-
-while (shouldAddPatient) {
-  const listaPacientes = new Animalitos({
-    raza: prompt("raza de tu mascota"),
-    nombre: prompt("nombre de la mascota"),
-    edad: prompt("cuántos años/meses tiene"),
-    color: prompt("de qué color es"),
-    peso: prompt("cuánto pesa"),
-    sexo: prompt("es macho o hembra"),
+function searchAndDisplayPatient() {
+  const searchPaciente = document.getElementById("searchPaciente");
+  searchPaciente.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const inputsBuscador = e.target.children;
+    const nombreBuscado = inputsBuscador[1].value;
+    let pacienteEncontrado = pacientes.filter(mascotas => mascotas.nombre === nombreBuscado);
+    
+    displayPatients(pacienteEncontrado);
   });
-
-  historialPacientes.push(listaPacientes);
-
-  const continueAdding = confirm("queres añadir un nuevo paciente?");
-  if (!continueAdding) {
-    shouldAddPatient = false;
-  }
 }
-
-const searchPaciente = confirm("queres buscar algun paciente?");
-if (searchPaciente) {
-    nombreDelPaciente = prompt("escriba el nombre del paciente");
-};
-const pacienteEncontrado = historialPacientes.filter(paciente => paciente.nombre === nombreDelPaciente);
-console.log(pacienteEncontrado);
-
-historialPacientes.sort((a, b) => a.raza.localeCompare(b.raza));
-console.log(historialPacientes);
-
+function displayPatients(patients) {
+  patients.forEach((patient) => {
+    let sectionAside = document.createElement("section");
+    sectionAside.innerHTML = `
+      <div class="divFormIndex" id="divFormIndex">
+        <p>
+          Nombre = ${patient.nombre}
+          Edad = ${patient.edad}
+          Genero = ${patient.sexo}
+          Peso = ${patient.peso}
+          Especie = ${patient.raza}
+          DNI = ${patient.dni}
+        </p>
+      </div>`;
+    asideIndex.appendChild(sectionAside);
+  });
+}
+searchAndDisplayPatient();
 
