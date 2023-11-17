@@ -11,32 +11,123 @@
     object-fit: cover;
 };
 body{
-    background-color: $backGroundBody;
-};
-form {
-    display: flex;
-    align-content: center;
-    width: 100%;
-    input{
+    background: linear-gradient($backGroundBody,rgb(52, 69, 80,) );
+    .hClass{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .mainIndex{
+        padding: 75px 0px 15px 0px;
+        margin:0px 0px 10px 0px ;
+    }
+    .formIndex {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto 10px auto;
+        padding: 5px 5px 15px 5px;
         width: 50%;
-        height: 10%;
-        margin: 1%;
+        flex-wrap: wrap;
+        input{
+            width: 100%;
+            margin: 1%;
+            background-color: $backGroundBody;
+            border: $mainColor;
+        }
+    }
+}
+    .nav {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        margin: 2px 0px 10px 0px;
+        background-color: $mainColor;
+        border: $backGroundText;
+        position: fixed;
+        width: 100%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap:wrap;
+            li{
+                margin: 5px;
+            }
+    }
+};
+
+p{
+    text-align: center;
+}
+.divFormIndex{
+    width: fit-content;
+    height: 9em;
+    margin: 10px 5px 10px 5px;
+    padding: 5px;
+    border: $backGroundText;
+    background-color: rgba(15, 60, 68, 0.9);
+    border-radius: $borderRadius;
+    div{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
-nav {
+.printedTurnos{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto 10px auto;
+    width: 200px;
+    background-color: rgba(15, 60, 68, 0.9);
+    padding: 20px;
+    border: $backGroundText;
+    border-radius: $borderRadius;
+}
+
+a{
+    &:hover{
+        color: rgb(100, 163, 200)
+    }
+}
+
+#presentacion{
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px 20px 10px;
+    padding: 75px 0px 5px 0px;
+    font-size: larger;
+}
+
+#sectionStock{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: $backGroundText;
+    border-radius: 10%;
+    box-shadow:0px 0px 5px 0px;
+    margin: 5px;
+    ul{
+        margin: 20px 0px 20px 0px;
+        padding: 0px 15px 0px 15px;
+    }
+}
+
+footer{
     display: flex;
     justify-content: space-around;
-    margin: 10px;
+    flex-wrap: wrap;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 0px 15px 0px;
     background-color: $mainColor;
     border: $backGroundText;
+    width: 100%;
     ul{
         display: flex;
         justify-content: space-between;
-        margin-left: 5px;
-        padding-left: 5px;
+        flex-wrap: wrap;
         li{
-            margin: 5px;
+            margin: 5px 10px 0px 10px;
+            padding: 0px 5px 0px 5px;
         }
     }
 }

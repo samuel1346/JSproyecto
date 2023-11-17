@@ -1,0 +1,264 @@
+[
+{
+    "typeOf":"medicamento",
+    "id": 1,
+    "value": "Abamectin",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 2,
+    "value": "Imidocarb",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 3,
+    "value": "Lufenurón",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 2,
+    "value": "Imidocarb",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 3,
+    "value": "Lufenurón",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 4,
+    "value": "Metronidazole",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 5,
+    "value": "Moxidectin",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 6,
+    "value": "Narasina",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 7,
+    "value": "Olaquindox",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 5,
+    "value": "Moxidectin",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 6,
+    "value": "Narasina",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 7,
+    "value": "Olaquindox",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 5,
+    "value": "Moxidectin",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 6,
+    "value": "Narasina",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 7,
+    "value": "Olaquindox",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 8,
+    "value": "Sulfadimidina",
+    "inStock": 0
+},
+{
+    "typeOf":"medicamento",
+    "id": 9,
+    "value": "Dimetridazol",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 10,
+    "value": "pedigree",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 11,
+    "value": "gati",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 11,
+    "value": "gati",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 10,
+    "value": "pedigree",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 11,
+    "value": "gati",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 10,
+    "value": "pedigree",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 11,
+    "value": "gati",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 11,
+    "value": "gati",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 11,
+    "value": "gati",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 12,
+    "value": "cat chow",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 13,
+    "value": "dog chow",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 13,
+    "value": "dog chow",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 14,
+    "value": "dog selection",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 15,
+    "value": "purina gatos",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 16,
+    "value": "purina perros",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 17,
+    "value": "whiskas",
+    "inStock": 0
+},
+{
+    "typeOf":"alimentos",
+    "id": 18,
+    "value": "canine",
+    "inStock": 0
+},
+{
+    "typeOf":"pipetas",
+    "id": 19,
+    "value": "pipeta power",
+    "inStock": 0
+},
+{
+    "typeOf":"pipetas",
+    "id": 20,
+    "value": "super pipeta",
+    "inStock": 0
+},{
+    "typeOf":"pipetas",
+    "id": 20,
+    "value": "super pipeta",
+    "inStock": 0
+},{
+    "typeOf":"pipetas",
+    "id": 20,
+    "value": "super pipeta",
+    "inStock": 0
+},
+{
+    "typeOf":"pipetas",
+    "id": 21,
+    "value": "pipetas gold",
+    "inStock": 0
+},
+{
+    "typeOf":"pipetas",
+    "id": 22,
+    "value": "puppy pipetas",
+    "inStock": 0
+},
+{
+    "typeOf":"pipetas",
+    "id": 22,
+    "value": "puppy pipetas",
+    "inStock": 0
+},
+{
+    "typeOf":"pipetas",
+    "id": 22,
+    "value": "puppy pipetas",
+    "inStock": 0
+},
+{
+    "typeOf":"pipetas",
+    "id": 22,
+    "value": "puppy pipetas",
+    "inStock": 0
+},
+{
+    "typeOf":"pipetas",
+    "id": 22,
+    "value": "puppy pipetas",
+    "inStock": 0
+}
+]

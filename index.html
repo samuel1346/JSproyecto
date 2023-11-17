@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>proyecto de javascript</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css
+" rel="stylesheet"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" href="apple-touch-icon.png">
+    <title>Veterinaria S.A.</title>
 </head>
 <body>
-    <nav>
-        <h1>
-            Veterinaria
+    <nav id="nav" class="nav">
+        <h1 class="hClass">
+            <a href="#presentacion">Veterinaria</a>
         </h1>
         <ul class="ulIndex" id="ulIndex">
-            <li>
-                Inicio
+            <li  id = "buttonPacientes">
+                <a href="#searchPaciente">Pacientes</a>
             </li>
-            <li>
-                pacientes
+            <li id = "buttonTurnos">
+                <a href="#sectionAgenda">Turnos</a>
             </li>
-            <li>
-                reservas
+            <li id="buttonStock">
+                <a href="#sectionStock">stock</a>
             </li>
         </ul>
     </nav>
     <header>
     </header>
+    <p id="presentacion">
+        Sitio web para administracion de clinicas veterinarias
+        de caracter publico y privado
+    </p>
     <main class="mainIndex" id="mainIndex">
-        <h1>ingresar datos de la mascota</h1>
-        <form action="" id="formSaveDataPatient" class="formSaveDataPatient">
+        <h2 class="hClass">ingresar datos de la mascota</h1>
+        <form action="" id="formSaveDataPatient" class="formIndex">
             <label for="nombre">nombre y apellido</label>
             <input type="text" id="nombre">
             <label for="edad">cuantos años/meses tiene?</label>
@@ -42,15 +50,53 @@
         </form>
     </main>
     <aside class="asideIndex" id="asideIndex">
-        <h2>buscar paciente</h2>
-        <form action="" id="searchPaciente">
+        <h2 class="hClass">buscar mascota</h2>
+        <form action="" id="searchPaciente" class="formIndex">
             <label for="nombreDeLaBusqueda">nombre y apellido</label>
             <input type="text" id="nombreDeLaBusqueda">
             <input type="submit" id="enviar" value="buscar">
+        </form>
+    <section id="sectionAgenda">
+        <h2 class="hClass">agendar turno</h2>
+        <form action="" id="agendarPaciente" class="formIndex">
+            <label for="nombreDeLaBusqueda">nombre y apellido</label>
+            <input type="text" id="nombreDeLaBusqueda">
+            <label for="turno">agendar turno</label>
+            <input type="date" id="turno">
+            <input type="submit" id="enviar" value="guardar">
+        </form>
+    </section>
+    <section id="sectionTurnos">
+        <h2 class="hClass">Buscar turno</h2>
+        <form action="" id="buscarTurno" class="formIndex">
+            <label for="turnosBuscador">Nombre de la mascota</label>
+            <input type="text" id="turnosBuscador">
+            <input type="submit"  id="buscarTurnoSubmit" value="buscar">
+        </form>
+    </section>
+    <section id="sectionStock">
+            <ul class="stock" id="stockMedicamentos">
+                <a href="#"><h2>medicamentos</h2></a>
+            </ul>
+            <ul class="stockAlimentos" id="stockAlimentos">
+                <a href="#"><h2>alimentos</h2></a>
+            </ul>
+            <ul class="stockPipetas" id="stockPipetas">
+                <a href="#"><h2>pipetas</h2></a>
+            </ul>
+    </section>
     </aside>
-    <footer>
-
+    <footer >
+        <h2 class="hClass">contactos</h2>
+        <ul>
+            <li><a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe" target="_blank">Mail</a></li>
+            <li><a href="https://web.whatsapp.com/" target="_blank">whats app</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
+            <li><a href="#">Tel : 15509090</a></li>
+        </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="/main.js"></script>
 </body>
 </html>

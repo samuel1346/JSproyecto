@@ -1,6 +1,6 @@
 * {
-  font-family: "Geologica", sans-serif;
-  color: rgb(187, 180, 180);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(221, 213, 213);
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
@@ -10,35 +10,125 @@
 }
 
 body {
-  background-color: rgba(12, 12, 12, 0.9);
+  background: linear-gradient(rgba(7, 7, 7, 0.96), rgb(52, 69, 80));
 }
-
-form {
+body .hClass {
   display: flex;
-  align-content: center;
-  width: 100%;
+  justify-content: center;
+  text-align: center;
+  text-decoration: underline;
 }
-form input {
+body .mainIndex {
+  padding: 75px 0px 15px 0px;
+  margin: 0px 0px 10px 0px;
+}
+body .formIndex {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 10px auto;
+  padding: 5px 5px 15px 5px;
   width: 50%;
-  height: 10%;
+  flex-wrap: wrap;
+}
+body .formIndex input {
+  width: 100%;
   margin: 1%;
+  background-color: rgba(7, 7, 7, 0.96);
+  border: rgba(15, 60, 68, 0.96);
 }
 
-nav {
+.nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 10px;
+  margin: 2px 0px 10px 0px;
   background-color: rgba(15, 60, 68, 0.96);
   border: solid 3px rgba(15, 15, 15, 0.9);
+  position: fixed;
+  width: 100%;
 }
-nav ul {
+.nav ul {
   display: flex;
   justify-content: space-between;
-  margin-left: 5px;
-  padding-left: 5px;
+  flex-wrap: wrap;
 }
-nav ul li {
+.nav ul li {
   margin: 5px;
+}
+
+p {
+  text-align: center;
+}
+
+.divFormIndex {
+  width: fit-content;
+  height: 9em;
+  margin: 10px 5px 10px 5px;
+  padding: 5px;
+  border: solid 3px rgba(15, 15, 15, 0.9);
+  background-color: rgba(15, 60, 68, 0.9);
+  border-radius: 0% 0% 20% 0%;
+}
+.divFormIndex div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.printedTurnos {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 10px auto;
+  width: 200px;
+  background-color: rgba(15, 60, 68, 0.9);
+  padding: 20px;
+  border: solid 3px rgba(15, 15, 15, 0.9);
+  border-radius: 0% 0% 20% 0%;
+}
+
+a:hover {
+  color: rgb(100, 163, 200);
+}
+
+#presentacion {
+  display: flex;
+  justify-content: center;
+  margin: 0px 10px 20px 10px;
+  padding: 75px 0px 5px 0px;
+  font-size: larger;
+}
+
+#sectionStock {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: solid 3px rgba(15, 15, 15, 0.9);
+  border-radius: 10%;
+  box-shadow: 0px 0px 5px 0px;
+  margin: 5px;
+}
+#sectionStock ul {
+  margin: 20px 0px 20px 0px;
+  padding: 0px 15px 0px 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 15px 0px 0px 0px;
+  padding: 0px 0px 15px 0px;
+  background-color: rgba(15, 60, 68, 0.96);
+  border: solid 3px rgba(15, 15, 15, 0.9);
+  width: 100%;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer ul li {
+  margin: 5px 10px 0px 10px;
+  padding: 0px 5px 0px 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
