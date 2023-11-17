@@ -186,7 +186,6 @@ const processItemsByType = async (type) => {
   });
 };
 
-// Call the function for each type
 processItemsByType("medicamento");
 processItemsByType("alimentos");
 processItemsByType("pipetas");
